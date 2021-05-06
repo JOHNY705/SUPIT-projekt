@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="icon" href="../../Media/Algebra-logo.png" />
+
+    <link rel="stylesheet" href="../../Novosti/novosti.css">
+    <link rel="stylesheet" href="../../Početna/form.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <title>SUPIT - projektni zadatak</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="site-nav">
+        <a href="../../Početna/index.html">
+          <img
+            id="logo"
+            src="../../Media/Algebra-logo.png"
+            alt="Logo visokog učilišta Algebra"
+          />
+        </a>
+        <ul>
+          <li>
+            <img src="../../Media/pocetna.svg" class="icon-home" />
+            <a href="../../Početna/index.html">Početna</a>
+          </li>
+          <li>
+            <img
+              src="../../Media/bubble.svg"
+              class="icon-about"
+            />
+            <a href="../../O nama/index.html">O nama</a>
+          </li>
+          <li>
+            <img
+              src="../../Media/info.svg"
+              class="icon-news"
+            />
+            <a href="../../Novosti/index.html">Novosti</a>
+          </li>
+          <li>
+            <img
+              src="../../Media/info.svg"
+              class="icon-plan"
+            />
+            <a href="../../Nastavni plan/index.html">Nastavni plan</a>
+          </li>
+          <li>
+            <img
+              src="../../Media/mail.svg"
+              class="icon-contact"
+            />
+            <a
+              data-fancybox=""
+              data-src="#form-window"
+              data-modal="true"
+              href="#"
+              >Kontakt</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="body">
+      <div id="form-window">
+        <form action="http://www.fulek.com/VUA/SUPIT/ContactUs" method="post">
+          <div class="window-title">
+            <img id="icon-email" src="../../Media/mail.svg" />
+            <p class="title">Kontaktirajte nas</p>
+          </div>
+          <div class="window-content">
+            <label for="txtName">Puno ime:</label>
+            <input type="text" name="name" id="txtName" autofocus />
+
+            <label for="txtEmail">E-mail:</label>
+            <input type="email" name="email" id="txtEmail" required />
+
+            <label for="ddlVaznost">Važnost poruke:</label><br />
+            <select name="importance" id="ddlVaznost">
+              <option value="high">Visoka</option>
+              <option value="low">Niska</option>
+            </select>
+
+            <label for="txtPoruka">Vaša poruka:</label> <br />
+            <textarea
+              name="message"
+              id="txtPoruka"
+              cols="30"
+              rows="5"
+            ></textarea>
+          </div>
+          <button class="btn btn-submit" type="submit">
+            Pošalji
+          </button>
+          <button class="btn btn-cancel" data-fancybox-close="">
+            Odustani
+          </button>
+        </form>
+      </div>
+      <div id="page-banner3">
+        <p class="naslov-stranice"></p>
+      </div>
+      <p id="naslov">Digitalno Junior ljeto</p>
+      <div class="content">
+        <p>
+          Algebra Junior organizira edukativne i zabavne ljetne praznike za sve
+          osnovnoškolce! I ove smo godine pripremili digitalne radionice za
+          djecu čiji je fokus rješavanja raznih problema korištenjem
+          tehnologije, multimedije, digitalnog dizajna i komunikacija te
+          stvaranju sadržaja u svim multimedijskim i softverskim oblicima.
+          Radionice se održavaju u sklopu Digitalnog ljetnog kampa u Crikvenici
+          i Digitalne ljetne škole u Zagrebu kako bismo se družili, zabavljali i
+          učili i na moru i na kontinentu! Na digitalnom kampu i u školi
+          provodit će se dva različita programa koji su namijenjena djeci od 1.
+          do 8. razreda. Ovisno o odabranom terminu, polaznici će prolaziti kroz
+          1. ili 2. program, a u slučaju pohađanja dvotjednih programa – oba. U
+          prvom programu nađe nindže uče biti glazbeni menadžeri dok su u drugom
+          novinari i kreatori informacija masovnih medija. Provjerite termine,
+          cijene i lokacije škole i kampa na sljedećem linku.
+        </p>
+      </div>
+    </div>
+    <div class="footer">
+      <p>
+        Budi izvrstan u onom što voliš<br /><span id="zaiskri">Zaiskri</span>
+      </p>
+    </div>
+  </body>
+</html>

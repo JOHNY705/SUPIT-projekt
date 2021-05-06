@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="icon" href="../../Media/Algebra-logo.png" />
+    
+    <link rel="stylesheet" href="../../Novosti/novosti.css">
+    <link rel="stylesheet" href="../../Početna/form.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <title>SUPIT - projektni zadatak</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="site-nav">
+        <a href="../../Početna/index.html">
+          <img
+            id="logo"
+            src="../../Media/Algebra-logo.png"
+            alt="Logo visokog učilišta Algebra"
+          />
+        </a>
+        <ul>
+          <li>
+            <img src="../../Media/pocetna.svg" class="icon-home" />
+            <a href="../../Početna/index.html">Početna</a>
+          </li>
+          <li>
+            <img
+              src="../../Media/bubble.svg"
+              class="icon-about"
+            />
+            <a href="../../Novosti/index.html">O nama</a>
+          </li>
+          <li>
+            <img
+              src="../../Media/info.svg"
+              class="icon-news"
+            />
+            <a href="../../Novosti/index.html">Novosti</a>
+          </li>
+          <li>
+            <img
+              src="../../Media/info.svg"
+              class="icon-plan"
+            />
+            <a href="../../Nastavni plan/index.html">Nastavni plan</a>
+          </li>
+          <li>
+            <img
+              src="../../Media/mail.svg"
+              class="icon-contact"
+            />
+            <a
+              data-fancybox=""
+              data-src="#form-window"
+              data-modal="true"
+              href="#"
+              >Kontakt</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="body">
+      <div id="form-window">
+        <form action="http://www.fulek.com/VUA/SUPIT/ContactUs" method="post">
+          <div class="window-title">
+            <img id="icon-email" src="../../Media/mail.svg" />
+            <p class="title">Kontaktirajte nas</p>
+          </div>
+          <div class="window-content">
+            <label for="txtName">Puno ime:</label>
+            <input type="text" name="name" id="txtName" autofocus />
+
+            <label for="txtEmail">E-mail:</label>
+            <input type="email" name="email" id="txtEmail" required />
+
+            <label for="ddlVaznost">Važnost poruke:</label><br />
+            <select name="importance" id="ddlVaznost">
+              <option value="high">Visoka</option>
+              <option value="low">Niska</option>
+            </select>
+
+            <label for="txtPoruka">Vaša poruka:</label> <br />
+            <textarea
+              name="message"
+              id="txtPoruka"
+              cols="30"
+              rows="5"
+            ></textarea>
+          </div>
+          <button class="btn btn-submit" type="submit">
+            Pošalji
+          </button>
+          <button class="btn btn-cancel" data-fancybox-close="">
+            Odustani
+          </button>
+        </form>
+      </div>
+      <div id="page-banner2">
+        <p class="naslov-stranice">
+          Nagrađujemo izvrsnost: Objavljujemo dobitnike stipendijskog natječaja
+          ak.god. 2018./2019.!
+        </p>
+      </div>
+      <p id="naslov">Stipendijski natječaj ak.god. 2018./2019.</p>
+      <div class="content">
+        <p>
+          Nakon velikog broja prijava koje smo primili, detaljnom analizom i
+          provjerom utvrdili smo dobitnike ovogodišnjeg stipendijskog natječaja
+          za maturante! Stipendiju u vrijednosti od 10.000,00 kuna na
+          potrošačkoj kartici dobivaju: Heidi Sokolovski iz Zagreba - za
+          najbolji rezultat iz Matematike na A razini osvojila je stipendiju u
+          iznosu od 10.000,00 kn. Tereza Žugaj iz Zagreba - za najbolji rezultat
+          iz Matematike na B razini osvojila je stipendiju u iznosu od 10.000,00
+          kn. Dalija Romac iz Sinja - za najbolji rezultat iz Hrvatskog jezika
+          na A razini te dodatna 204 boda za rezultat iz Matematike A i
+          Engleskog jezika A osvojila je stipendiju u iznosu od 10.000,00 kn.
+          Ella Milinović iz Zagreba - za najbolji rezultat iz Hrvatskog jezika
+          na B razini osvojila je stipendiju u iznosu od 10.000,00 kn. Borna
+          Skračić iz Zadra – za najbolji rezultat iz Engleskog jezika na A
+          razini osvojio je stipendiju u iznosu od 10.000,00 kn. Lukas Božić iz
+          Umaga - za najbolji rezultat iz Engleskog jezika na B razini osvojio
+          je stipendiju u iznosu od 10.000,00 kn.
+        </p>
+      </div>
+    </div>
+    <div class="footer">
+      <p>
+        Budi izvrstan u onom što voliš<br /><span id="zaiskri">Zaiskri</span>
+      </p>
+    </div>
+  </body>
+</html>
